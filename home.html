@@ -11,6 +11,7 @@ TRADEMARKS OR OTHER RIGHTS.
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel ="stylesheet" href="stylesheet.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <title>Trekbook</title>
@@ -19,7 +20,24 @@ TRADEMARKS OR OTHER RIGHTS.
     <body>
         <div class = "main">
         <div class = "wrapper">
-           
+            <br>
+            <img src = "img/tb_trekbook-logo-vertical.png" alt = "Trekbook logo">
+            <br>
+            <p>A Personalized Travel Log</p>
+            <br>
+            <form>
+                <label class = "label" for=user>USERNAME</label>
+                <input class = "input" type=text id=user placeholder="Username...">
+                <br>
+                <br>
+                <label class = "label" for=pass>PASSWORD</label>
+                <input class = "input" type=password id=pass placeholder="Password...">
+            </form>
+            <a id = "forgotPassword.html" href = "#">FORGOT PASSWORD</a>
+            <br>
+            <a href="home.html" id = "login" class="btn btn-primary btn-lg active btn-rounded" role="button" aria-pressed="true">LOGIN</a>
+            <br>
+            <a id = "newUser.html" href = "#">CREATE NEW USER</a>
         </div>
     </div>
     </body>
