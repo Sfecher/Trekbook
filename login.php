@@ -19,9 +19,6 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
     </head>
     <body>
-    <?php
-       
-    ?>
         <div class = "main">
         <div class = "wrapper">
             <br>
@@ -59,7 +56,7 @@ TRADEMARKS OR OTHER RIGHTS.
                             header("Location: http://localhost:8888/trekbook/home.php");
                             exit();
                         }else{
-                            print "<p style='color:red; font-size:13px; font-family:Museo Sans;'>YOUR USERNAME OR PASSWORD IS INNCORRECT</p>";
+                            print "<p style='color:red; font-size:13px; font-family:Museo Sans;'>USERNAME OR PASSWORD IS INCORRECT</p>";
                         }
                     }
                 ?>
