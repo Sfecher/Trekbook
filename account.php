@@ -30,7 +30,6 @@ TRADEMARKS OR OTHER RIGHTS.
     <body>
         <div class = "main">
         <div class = "wrapper">
-            
             <form method = "post" action = "account.php">
                 <label class="label" for="name">NAME</label>
                 <input class="input" type="text" name="name" id="name" placeholder="Name..." value="<?php echo $prof["name"]; ?>">
