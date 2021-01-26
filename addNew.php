@@ -40,6 +40,7 @@ TRADEMARKS OR OTHER RIGHTS.
         </div>
 
         <br>
+        <!-- creating a form that the user will be able to insert information into. -->
         <form method = "post" action = "#">
             <label class="label" for="location">Location</label> <br>
             <input class="input" type="text" name="location" id="location" placeholder="Location...">
