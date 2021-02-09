@@ -15,6 +15,7 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel ="stylesheet" href="stylesheetMain.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
         <title>Trekbook</title>
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
     </head>
@@ -41,22 +42,19 @@ TRADEMARKS OR OTHER RIGHTS.
 
         <br>
         <!-- creating a form that the user will be able to insert information into. -->
-        <form method = "post" action = "#">
-            <label class="label" for="location">Location</label> <br>
-            <input class="input" type="text" name="location" id="location" placeholder="Location...">
-            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "Submit">
+        <form method = "post" action = "#" id="filter">
+            <label class="label" for="location"><img src="img/tb_location.png" alt="location pin" class="newImg">Location</label> <br>
+            <input class="input" type="text" name="location" id="location" placeholder="Location..."><br>
+            <label class="label" for="category"><img src="img/tb_category.png" alt="star in a circle" class="newImg">Category</label> <br>
+            <input type="image" class="image" alt="food or drink" src="img/button_food_drink_grey.png">
+            <input type="image" class="image" alt="food or drink" src="img/button_shopping_grey.png">
+            <input type="image" class="image" alt="food or drink" src="img/button_landmark_grey.png">
+            <input type="image" class="image" alt="food or drink" src="img/button_recreation_grey.png">
+            <input type="image" class="image" alt="food or drink" src="img/button_lodging_grey.png">
+            <label class="label" for="tags"><img src="img/tb_list.png" alt="check box image" class="newImg">Tags</label> <br>
+            <label class="label" for="note"><img src="img/tb_comment.png" alt="message bubble" class="newImg">Note</label> <br>
+            <input class="input" type="text" name="note" id="note" placeholder="Add a note..."><br>
+            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT">
         </form>
-
-        <script>
-            //just setting up the layout of how the links will be displayed.
-        function hamburgerBar() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-        </script>
     </body>
 </html>
