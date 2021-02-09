@@ -15,6 +15,7 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel ="stylesheet" href="stylesheetMain.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
         <title>Trekbook</title>
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
     </head>
@@ -26,7 +27,7 @@ TRADEMARKS OR OTHER RIGHTS.
                 <a href="home.php" class="active"><img src = "img/tb_trekbook-logo-vertical.png" alt = "Trekbook logo" width="60" height="35"></a>
                 <div id="myLinks"> <!--this is the set of links that will be used in the hamburger bar. -->
                     <a href="account.php" class="navLinks">ACCOUNT</a>
-                    <a href="addNew.php" class="navLinks">ADD NEW LOCATION</a>
+                    <a href="addNew.php" class="navLinks newLoc">ADD NEW LOCATION</a>
                     <a href="#about" class="navLinks">FILTER</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerBar()">
@@ -38,17 +39,5 @@ TRADEMARKS OR OTHER RIGHTS.
             </div>
                 <!-- End smartphone / tablet look -->
         </div>
-
-        <script>
-            //just setting up the layout of how the links will be displayed.
-        function hamburgerBar() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-        </script>
     </body>
 </html>
