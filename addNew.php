@@ -42,7 +42,7 @@ TRADEMARKS OR OTHER RIGHTS.
 
         <br>
         <!-- creating a form that the user will be able to insert information into. -->
-        <form method = "post" action = "#" id="filter">
+        <form method = "post" action = "home.php" id="filter">
             <label class="label" for="location"><img src="img/tb_location.png" alt="location pin" class="newImg">Location</label> <br>
             <input class="input" type="text" name="location" id="location" placeholder="Location..."><br>
             <label class="label" for="category"><img src="img/tb_category.png" alt="star in a circle" class="newImg">Category</label> <br>
