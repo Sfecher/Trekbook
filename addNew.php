@@ -54,7 +54,7 @@ TRADEMARKS OR OTHER RIGHTS.
             <label class="label" for="tags"><img src="img/tb_list.png" alt="check box image" class="newImg">Tags</label> <br>
             <label class="label" for="note"><img src="img/tb_comment.png" alt="message bubble" class="newImg">Note</label> <br>
             <input class="input" type="text" name="note" id="note" placeholder="Add a note..."><br>
-            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT">
+            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT" onclick="clickFunction()">
         </form>
     </body>
 </html>
