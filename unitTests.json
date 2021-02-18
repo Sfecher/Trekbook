@@ -1,0 +1,1463 @@
+{
+  "tests": [
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1bTqJZJdw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.html",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "r1pcJZJ_v",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/login.php",
+          "warnings": [],
+          "width": 763
+        }
+      ],
+      "description": "",
+      "id": "rkfXJbkOD",
+      "name": "US1:1",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "S1epqybyOv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ByZKTJZydw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.html",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJK-g-1uv",
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 262,
+          "y": 421
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJbcWe-1Ow",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Admin",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJnbxW1uD",
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 197,
+          "y": 522
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BygTbx-1Ov",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "AdminLogin!",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "S1KV1bJdP",
+      "name": "US1:2",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "HklFpk-JOP",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1eNZ6uVOv",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "SkVWTO4dD",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/login.php",
+          "warnings": [],
+          "width": 851
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1_-pONOw",
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 262,
+          "y": 446
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJgiZTuEOP",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Tom",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HypWT_4Ow",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 395,
+          "y": 742
+        },
+        {
+          "checkCenterPoint": true,
+          "checkDimensions": true,
+          "checkDisplay": true,
+          "checkOpacity": true,
+          "checkVisibility": true,
+          "continueOnFail": false,
+          "description": null,
+          "id": "BkJH4erdP",
+          "nodeName": null,
+          "selector": ".wrapper form p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_VISIBLE_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "ry4Rew4OP",
+      "name": "US2:1",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "SygBi3_4dD",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HyZZAEeBdw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "HkWCVxrOP",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/login.php",
+          "warnings": [],
+          "width": 714
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1m0EeHdD",
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 282,
+          "y": 515
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ryeNAExHdw",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "CatsAreCool",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1G-rlBOw",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 350,
+          "y": 632
+        },
+        {
+          "checkCenterPoint": true,
+          "checkDimensions": true,
+          "checkDisplay": true,
+          "checkOpacity": true,
+          "checkVisibility": true,
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1abSgSdv",
+          "nodeName": null,
+          "selector": ".wrapper form p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_VISIBLE_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "r14nExruv",
+      "name": "US2:2",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "H1xZAEgSdv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "H1bZBSxrdw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "SkZBrgrdw",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/login.php",
+          "warnings": [],
+          "width": 714
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HyVBSlHuD",
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 150,
+          "y": 388
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1bHrHxB_w",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Admin",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkPHSlBOD",
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 137,
+          "y": 515
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJGvrSxBOw",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "AdminLogin!",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJjSHxrdP",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 361,
+          "y": 646
+        },
+        {
+          "checkCenterPoint": true,
+          "checkDimensions": true,
+          "checkDisplay": true,
+          "checkOpacity": true,
+          "checkVisibility": true,
+          "continueOnFail": false,
+          "description": null,
+          "id": "SJa3W5rdD",
+          "nodeName": null,
+          "selector": ".wrapper form p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_NOT_VISIBLE_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Sysrrgr_P",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SyliBHgHOP",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "SJlQSxHdw",
+      "name": "US2:3",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "rJgbHrgHdv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1bgY5mvtw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/account.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 500,
+          "id": "HkMb67vYv",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "http://localhost:8888/trekbook/account.php",
+          "warnings": [],
+          "width": 500
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rkKliXvYP",
+          "nodeName": null,
+          "selector": "#name",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 65,
+          "y": 84
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1engomwKP",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#name",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Admin",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HyeZsXwKv",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 273,
+          "y": 481
+        }
+      ],
+      "description": "",
+      "id": "H1GrqmwFD",
+      "name": "US3:1",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "rkggtcXDtv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1Z8BoQPYD",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/account.php",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BkdroQwKv",
+          "nodeName": null,
+          "selector": "#email",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 152,
+          "y": 151
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SylFrsmwYD",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#email",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Admin@admin.com",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BynHjXwKP",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 415,
+          "y": 461
+        }
+      ],
+      "description": "",
+      "id": "rJiNomDFD",
+      "name": "US3:2",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "S1xIrjQPYD",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BkZGjsXvFw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/account.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "r1zoiQvKP",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/account.php",
+          "warnings": [],
+          "width": 864
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S14jomDFv",
+          "nodeName": null,
+          "selector": "#npass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 227,
+          "y": 237
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1erjsXwtv",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#npass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "AdminLogin!",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkPijXPYv",
+          "nodeName": null,
+          "selector": "#vpass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 166,
+          "y": 317
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SyeOij7DYP",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#vpass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "AdminLogin!",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Sy5ijXPYD",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 411,
+          "y": 485
+        },
+        {
+          "checkCenterPoint": true,
+          "checkDimensions": true,
+          "checkDisplay": true,
+          "checkOpacity": true,
+          "checkVisibility": true,
+          "continueOnFail": false,
+          "description": null,
+          "id": "Syu2smPtw",
+          "nodeName": null,
+          "selector": "#error",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_VISIBLE_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "SyhPoXwtw",
+      "name": "US3:3",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "rklzosmPtv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1-09yFTJO",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "SJAckFTJO",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/home.php",
+          "warnings": [],
+          "width": 1126
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1gjkYaJO",
+          "nodeName": null,
+          "selector": ".fa",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 1078,
+          "y": 39
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1_leY6Ju",
+          "nodeName": null,
+          "selector": ".newLoc",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "r17G1Ka1d",
+      "name": "US4:1",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "BJlC91tpku",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SJbQwlt6y_",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "r1Xvltp1_",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/home.php",
+          "warnings": [],
+          "width": 1071
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Byrwxta1u",
+          "nodeName": null,
+          "selector": ".newLoc",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "ADD NEW LOCATION",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 471,
+          "y": 20
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkHDxFa1d",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/addNew.php",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SygrvgFpku",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/trekbook/addNew.php",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1UKgYaJu",
+          "nodeName": null,
+          "selector": "#filter",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "BJiSJF6kO",
+      "name": "US4:2",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "BylQDlt6JO",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SJZ1hetay_",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/addNew.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "HyJ2eFpyd",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/addNew.php",
+          "warnings": [],
+          "width": 1071
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkeneFp1u",
+          "nodeName": null,
+          "selector": "#location",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 74,
+          "y": 156
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rybXhlKayO",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#location",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Noblesville, IN",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1i3gYa1_",
+          "nodeName": null,
+          "selector": "#submit",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 251,
+          "y": 160
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Byo2xY61u",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/addNew.php",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "Bk_U1Ypk_",
+      "name": "US4:3",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "Hyx1hgt6y_",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "H1bZBSxrdw",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/login.php",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 789,
+          "id": "SkZBrgrdw",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/trekbook/login.php",
+          "warnings": [],
+          "width": 714
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HyVBSlHuD",
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 150,
+          "y": 388
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1bHrHxB_w",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#user",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "Admin",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkPHSlBOD",
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 137,
+          "y": 515
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJGvrSxBOw",
+          "inputType": "password",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#pass",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "AdminLogin!",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJjSHxrdP",
+          "nodeName": null,
+          "selector": "#login",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 361,
+          "y": 646
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Sysrrgr_P",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SyliBHgHOP",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/trekbook/home.php",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "B1RO1e2Zd",
+      "name": "US1:3",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost:8888",
+          "id": "rJgbHrgHdv",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "directory": {
+    "tree": {
+      "children": [
+        {
+          "children": [
+            {
+              "id": "H1zQJ-1_w",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "rkfXJbkOD",
+              "type": "test"
+            },
+            {
+              "id": "rkYE1Wkuv",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "S1KV1bJdP",
+              "type": "test"
+            },
+            {
+              "id": "BJlAukxn-u",
+              "testId": "B1RO1e2Zd",
+              "type": "test"
+            }
+          ],
+          "collapsed": false,
+          "id": "SktAUPtUv",
+          "module": "UT1"
+        },
+        {
+          "children": [
+            {
+              "id": "SkVRxw4dD",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "ry4Rew4OP",
+              "type": "test"
+            },
+            {
+              "id": "r1N2ElH_v",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "r14nExruv",
+              "type": "test"
+            },
+            {
+              "id": "rkeXrgH_v",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "SJlQSxHdw",
+              "type": "test"
+            }
+          ],
+          "collapsed": false,
+          "id": "rJ9hlvEuw",
+          "module": "UT2"
+        },
+        {
+          "children": [
+            {
+              "id": "HkMH9mPFP",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "H1GrqmwFD",
+              "type": "test"
+            },
+            {
+              "id": "SJi4omDtv",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "rJiNomDFD",
+              "type": "test"
+            },
+            {
+              "id": "Bk2wi7vtv",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "SyhPoXwtw",
+              "type": "test"
+            }
+          ],
+          "collapsed": false,
+          "id": "BJiH5mPFD",
+          "module": "UT3"
+        },
+        {
+          "children": [
+            {
+              "id": "Hk7z1KaJu",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "r17G1Ka1d",
+              "type": "test"
+            },
+            {
+              "id": "rJiB1tTyd",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "BJiSJF6kO",
+              "type": "test"
+            },
+            {
+              "id": "B1O8kFayO",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "Bk_U1Ypk_",
+              "type": "test"
+            }
+          ],
+          "collapsed": false,
+          "id": "Hk8m1takd",
+          "module": "UT4"
+        }
+      ],
+      "module": "tests",
+      "showGen": true,
+      "topLevel": true
+    }
+  },
+  "dataProfiles": [],
+  "runs": [
+    {
+      "env": "",
+      "folder": "all",
+      "id": "BkuDLqr_D",
+      "integration": {
+        "body": "{\n    \"text\": \"Tests were a SMASHING ${stringMessage}\",\n    \"username\":\"A Snarky auto-tester\",\n    \"icon_emoji\": \":ghost:\"\n}",
+        "headers": "{\n  \"Content-Type\": \"application/json\"\n}",
+        "method": "post",
+        "type": "NONE",
+        "url": "https://hooks.slack.com/services/XXXXXX/XXXXXXX/XXXXXXXXXX"
+      },
+      "name": "Unit Tests",
+      "tags": [],
+      "tags_and": 1,
+      "type": "PROMISEACTION"
+    }
+  ],
+  "userSettings": {
+    "drafts": false,
+    "warnings": false,
+    "autodescribe": false,
+    "actionNumbers": false,
+    "globalTimeout": 5000,
+    "descriptions": [],
+    "selectorPriority": [
+      {
+        "type": "attr",
+        "name": "test-id",
+        "enabled": true,
+        "ancestor": false
+      },
+      {
+        "type": "id",
+        "enabled": true
+      },
+      {
+        "type": "name",
+        "enabled": true
+      },
+      {
+        "type": "type",
+        "enabled": true
+      },
+      {
+        "type": "ancestor",
+        "enabled": true
+      },
+      {
+        "type": "class",
+        "enabled": true
+      }
+    ]
+  },
+  "tags": []
+}
