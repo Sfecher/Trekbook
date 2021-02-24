@@ -42,18 +42,68 @@ TRADEMARKS OR OTHER RIGHTS.
 
         <br>
         <!-- creating a form that the user will be able to insert information into. -->
-        <form method = "post" action = "home.php" id="filter">
-            <label class="label" for="location"><img src="img/tb_location.png" alt="location pin" class="newImg">Location</label> <br>
-            <input class="input" type="text" name="location" id="location" placeholder="Location..."><br>
-            <label class="label" for="category"><img src="img/tb_category.png" alt="star in a circle" class="newImg">Category</label> <br>
-            <input type="image" class="image" alt="food or drink" src="img/button_food_drink_grey.png">
-            <input type="image" class="image" alt="food or drink" src="img/button_shopping_grey.png">
-            <input type="image" class="image" alt="food or drink" src="img/button_landmark_grey.png">
-            <input type="image" class="image" alt="food or drink" src="img/button_recreation_grey.png">
-            <input type="image" class="image" alt="food or drink" src="img/button_lodging_grey.png">
-            <label class="label" for="tags"><img src="img/tb_list.png" alt="check box image" class="newImg">Tags</label> <br>
-            <label class="label" for="note"><img src="img/tb_comment.png" alt="message bubble" class="newImg">Note</label> <br>
-            <input class="input" type="text" name="note" id="note" placeholder="Add a note..."><br>
+        <form method = "post" action="home.php" id="filter">
+            <div id="form">
+                <label class="label" for="location"><img src="img/raws/tb_location.png" alt="location pin" class="newImg">Location</label> <br>
+                <div class="inputs">
+                    <input class="input" type="text" name="location" id="location" placeholder="Location..."><br><br>
+                </div>
+                <!-- US6:1 -->
+                <div>
+                    <label class="label" for="catigories"><img src="img/raws/tb_category.png" alt="star image" class="newImg">Catigories</label><br>
+                    <input class="imgCheckbox" type='checkbox' name='foodAndDrink' value='valuable' id="foodAndDrink"/>
+                    <label for="foodAndDrink"></label>
+                    <input class="shopping" type='checkbox' name='shopping' value='valuable' id="shopping"/>
+                    <label for="shopping"></label>
+                    <input class="landmark" type='checkbox' name='landmark' value='valuable' id="landmark"/>
+                    <label for="landmark"></label>
+                    <input class="recreation" type='checkbox' name='recreation' value='valuable' id="recreation"/>
+                    <label for="recreation"></label>
+                    <input class="lodging" type='checkbox' name='lodging' value='valuable' id="lodging"/>
+                    <label for="lodging"></label><br>
+
+                    <label class="catlabel" id="foodDrink" for="foodAndDrink">FOOD & DRINK</label>
+                    <label class="catlabel" id="shopping" for="shopping">SHOPPING</label>
+                    <label class="catlabel" id="landmark" for="landmark">LANDMARK</label>
+                    <label class="catlabel" id="recreation" for="recreation">RECREATION</label>
+                    <label class="catlabel" id="lodging" for="lodging">LODGING</label>
+
+                </div>
+
+                <!-- US6:2 -->
+                <label class="label" for="tags"><img src="img/raws/tb_list.png" alt="check box image" class="newImg">Tags</label> <br>
+                <div id="tagsHome">
+                    <input type="checkbox" name="hammock" id="hammock" />
+                    <label class="tag" for="hammock">HAMMOCK</label>
+                    <input type="checkbox" name="adventure" id="adventure" />
+                    <label class="tag" for="adventure">ADVENTURE</label>
+                    <input type="checkbox" name="airbnb" id="airbnb" />
+                    <label class="tag" for="airbnb">AIRBNB</label>
+                    <input type="checkbox" name="bicycles" id="bicycles" />
+                    <label class="tag" for="bicycles">BICYCLES</label>
+                    <input type="checkbox" name="brewery" id="brewery" />
+                    <label class="tag" for="brewery">BREWERY</label>
+                    <input type="checkbox" name="campsite" id="campsite" />
+                    <label class="tag" for="campsite">CAMPSITE</label><br>
+                    <input type="checkbox" name="coffee" id="coffee" />
+                    <label class="tag" for="coffee">COFFEE</label>
+                    <input type="checkbox" name="gear" id="gear" />
+                    <label class="tag" for="gear">GEAR</label>
+                    <input type="checkbox" name="trailhead" id="trailhead" />
+                    <label class="tag" for="trailhead">TRAILHEAD</label>
+                    <input type="checkbox" name="hostel" id="hostel" />
+                    <label class="tag" for="hostel">HOSTEL</label>
+                    <input type="checkbox" name="food" id="food" />
+                    <label class="tag" for="food">FOOD</label>
+                    <input type="checkbox" name="winery" id="winery" />
+                    <label class="tag" for="winery">WINERY</label>
+                </div>
+    
+                <label class="label" for="note"><img src="img/raws/tb_comment.png" alt="message bubble" class="newImg">Note</label> <br>
+                <div class="inputs">
+                    <input class="input" type="text" name="note" id="note" placeholder="Add a note..."><br>
+                </div>
+            </div>
             <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT" onclick="clickFunction()">
         </form>
     </body>
