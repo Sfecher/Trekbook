@@ -41,6 +41,7 @@ TRADEMARKS OR OTHER RIGHTS.
     appearance: none;
     font-family: Source Sans Pro;
     font-weight: 600;
+    margin-left: 2%;
 }
 p{
     text-align: center;
@@ -48,22 +49,187 @@ p{
 }
 img{
     display: block;
+    margin-left: none;
+    margin-right: none;
+}
+input[type='image']{
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 input[type='password'], [type='text'] { 
     font-family: Source Sans Pro;
     color: #CECEC7;
     position: relative;
     padding: 20px;
+    width: 30%;
+
 }
 .label{
-    color: #40C190;
+    color: black;
     position: relative;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 2%;
 }
 ::placeholder{
     color: #a7a79a;
 }
+.newImg{
+    width: 10%;
+    display: inline-block;
+}
+
+#form{
+    margin-left: 10%;
+}
+
+
+
+input[type=checkbox] {
+    display:none;
+}
+
+/* food and drink */
+input[type=checkbox].imgCheckbox + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/button_food_drink2.png');
+}
+
+input[type=checkbox].imgCheckbox:checked + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/button_food_drink.png');
+}
+
+/* shopping */
+input[type=checkbox].shopping + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/shopping2.png');
+}
+
+input[type=checkbox].shopping:checked + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/shopping.png');
+}
+
+/* landmark */
+input[type=checkbox].landmark + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/landmark2.png');
+}
+
+input[type=checkbox].landmark:checked + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/landmark.png');
+}
+
+/* recreation */
+input[type=checkbox].recreation + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/recreation2.png');
+}
+
+input[type=checkbox].recreation:checked + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/recreation.png');
+}
+
+/* lodging */
+input[type=checkbox].lodging + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/lodging2.png');
+}
+
+input[type=checkbox].lodging:checked + label {
+    height: 122px;
+    width: 150px;
+    display:inline-block;
+    background-image: url('img/lodging.png');
+}
+
+/* this is for the labels for the above checkboxes */
+.catlabel{
+    margin-left: 1.5%;
+    font-family: Museo Sans;
+    font-weight: 900;
+}
+
+#foodDrink{
+    color: #41B9BF;
+}
+#shopping{
+    padding-left: 2%;
+    color: #8C76B7;
+}
+#landmark{
+    padding-left: 3.5%;
+    color: #40C190;
+}
+#recreation{
+    padding-left: 2.5%;
+    color: #db637d;
+}
+#lodging{
+    padding-left: 3%;
+    color: #E59742;
+}
+
+
+/* tag stuff */
+.tag{
+    padding: 0px 7px 0px;
+    border: 5px solid #cecec7;
+    line-height: 50px;
+    border-radius: 30px;
+    color: #cecec7;
+    font-family: Museo Sans;
+    font-weight: 900;
+}
+
+#hammock:checked ~ label[for="hammock"], 
+#adventure:checked ~ label[for="adventure"], 
+#airbnb:checked ~ label[for="airbnb"], 
+#bicycles:checked ~ label[for="bicycles"],
+#brewery:checked ~ label[for="brewery"],
+#campsite:checked ~ label[for="campsite"],
+#coffee:checked ~ label[for="coffee"],
+#food:checked ~ label[for="food"],
+#gear:checked ~ label[for="gear"],
+#hostel:checked ~ label[for="hostel"],
+#trailhead:checked ~ label[for="trailhead"],
+#winery:checked ~ label[for="winery"]{
+    background: #db637d;
+    border: 5px solid #db637d;
+    color: white;
+}
+
+.inputs{
+    margin-left: 2%;
+}
+#tagsHome{
+    margin-left: 4%;
+}
+
 
 /* 
   ##Device = Laptops, Desktops
@@ -111,6 +277,10 @@ input[type='password'], [type='text'] {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .label{
+        color: black;
+        font-family: Source Sans Pro;
     }
 
   }
@@ -161,6 +331,9 @@ input[type='password'], [type='text'] {
         margin: 0px;
         font-size: 15px;
         left: 10px;
+        color: black;
+        font-family: Source Sans Pro;
+        font-weight: 600;
     }
     ::placeholder{
         font-size: 18px;
