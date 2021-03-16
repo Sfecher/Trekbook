@@ -3,6 +3,7 @@ Trekbook User Manual
 
 Step 1: Load http://localhost:8888/trekbook/login.php into any browser.
 
+Login Page:
 Step 2: Click the Username textbox and input your username.
 
 Step 3: Click the password textbox and input your password.
@@ -12,6 +13,7 @@ Step 4: When your username and password are inputted click the login button.
 Step 5: If you do not get an error saying “Username or Password is incorrect” then you will see the “Home” page. 
 Else you must re-enter your username or password.
 
+Account page:
 Step 6: Click your profile image in the top right of the navigation bar (it should be grey with a person icon in it).
 
 Step 7: Now that you are on your account page. Click in the name textbox and 
@@ -28,6 +30,7 @@ Step 11: When all of the information that you had inputted looks correct then cl
 Step 12: If you do not get an error that says “two different passwords” but you get a message that says “Your changes have been made” 
 and all of the above information has repopulated to your new information click the “back to home” button.
 
+Adding a new location:
 Step 13: Now that you are back on the home page click the three bars at the top right of the page. 
 
 Step 14: You should see three links. Click the “Add New Location” link.
