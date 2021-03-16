@@ -1,4 +1,4 @@
-Trekbook User Manual </br>
+Trekbook User Manual 
 *This tutorial is only useful for my local machine* 
 
 Step 1: Load http://localhost:8888/trekbook/login.php into any browser.
@@ -41,3 +41,4 @@ Step 18: The next section is “Tags” click one or more tags that represent yo
 Step 19: Click in the “Note” textbox and add a quick note about your location. It can be anything!
 
 Step 20: When you have filled everything out and you are satisfied with the information you selected click the “Log It” button at the bottom of the screen.
+
