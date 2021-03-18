@@ -87,7 +87,6 @@ input[type='password'], [type='text'] {
 }
 
 
-
 input[type=checkbox] {
     display:none;
 }
@@ -225,9 +224,23 @@ input[type=checkbox].lodging:checked + label {
 
 .inputs{
     margin-left: 2%;
-}
+} 
 #tagsHome{
     margin-left: 4%;
+}
+
+#test {
+    border-radius: 20px;
+    padding: .6% 0% .6% 0%;
+    border: 5px solid #cecec7;
+  }
+#test:hover{
+    cursor: pointer;
+}
+#photoImg{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -339,4 +352,4 @@ input[type=checkbox].lodging:checked + label {
         font-size: 18px;
     }
     
-  }
+}
