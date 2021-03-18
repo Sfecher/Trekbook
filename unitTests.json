@@ -1467,7 +1467,7 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "ryxp-sUEGO",
+          "id": "rkgPrjE0Qu",
           "value": "/trekbook/addNew.php",
           "index": null
         },
@@ -1481,16 +1481,16 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "rk6biL4z_",
+          "id": "BJwHsV0Qd",
           "value": "${baseUrl}/trekbook/addNew.php",
-          "width": 663,
+          "width": 1102,
           "height": 789,
           "resize": false,
           "complete": false
         },
         {
           "type": "MOUSEDOWN",
-          "selector": "div > div:nth-of-type(3) > label",
+          "selector": "div > div:nth-of-type(4) > label",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1500,28 +1500,11 @@
           ],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "SJkMoIEMO",
+          "id": "SyKSo407u",
           "textContent": "HAMMOCK",
           "textAsserted": false,
-          "x": 129,
-          "y": 470
-        },
-        {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "#hammock:checked ~ label[for=\"hammock\"]",
-          "selectorType": "CSS",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "SJVEsLEGu",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
+          "x": 227,
+          "y": 468
         },
         {
           "type": "INPUT",
@@ -1533,14 +1516,14 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "Sye1zoUVGu",
+          "id": "HJxFBsNRXu",
           "value": true,
           "inputType": "checkbox",
           "isContentEditable": false
         },
         {
           "type": "MOUSEDOWN",
-          "selector": "div > div:nth-of-type(3) > label",
+          "selector": "div > div:nth-of-type(4) > label:nth-of-type(2)",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1550,15 +1533,15 @@
           ],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "SJeGsLNMu",
-          "textContent": "HAMMOCK",
+          "id": "Bk9SsEAXd",
+          "textContent": "ADVENTURE",
           "textAsserted": false,
-          "x": 135,
-          "y": 468
+          "x": 312,
+          "y": 452
         },
         {
-          "type": "EL_NOT_VISIBLE_ASSERT",
-          "selector": "#hammock:checked ~ label[for=\"hammock\"]",
+          "type": "INPUT",
+          "selector": "#adventure",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1566,12 +1549,127 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "S11Us8EGd",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
+          "id": "Hye5Ss4AX_",
+          "value": true,
+          "inputType": "checkbox",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(4) > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "S1jSiNCm_",
+          "textContent": "AIRBNB",
+          "textAsserted": false,
+          "x": 439,
+          "y": 463
+        },
+        {
+          "type": "INPUT",
+          "selector": "#airbnb",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "SyesBoNR7O",
+          "value": true,
+          "inputType": "checkbox",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(4) > label:nth-of-type(2)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "rkhroNAQd",
+          "textContent": "ADVENTURE",
+          "textAsserted": false,
+          "x": 357,
+          "y": 454
+        },
+        {
+          "type": "INPUT",
+          "selector": "#adventure",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "H1x2rsERXO",
+          "value": "on",
+          "inputType": "checkbox",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(4) > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "rk-hSoVCQd",
+          "textContent": "AIRBNB",
+          "textAsserted": false,
+          "x": 420,
+          "y": 457
+        },
+        {
+          "type": "INPUT",
+          "selector": "#airbnb",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "SkzhBjNCQO",
+          "value": "on",
+          "inputType": "checkbox",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(4) > label",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "S1TroECQu",
+          "textContent": "HAMMOCK",
+          "textAsserted": false,
+          "x": 189,
+          "y": 458
         },
         {
           "type": "INPUT",
@@ -1583,7 +1681,7 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "r1xeMoU4fd",
+          "id": "HJlTHs40Q_",
           "value": "on",
           "inputType": "checkbox",
           "isContentEditable": false
@@ -1614,7 +1712,7 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "HkZvft8Ezd",
+          "id": "rJloRoEAQu",
           "value": "/trekbook/addNew.php",
           "index": null
         },
@@ -1628,33 +1726,16 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "r1PMtUVMd",
+          "id": "S1oRjEA7d",
           "value": "${baseUrl}/trekbook/addNew.php",
-          "width": 663,
+          "width": 1102,
           "height": 789,
           "resize": false,
           "complete": false
         },
         {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "input[type=checkbox].imgCheckbox + label",
-          "selectorType": "CSS",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "HypC5UNGd",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
-        },
-        {
           "type": "MOUSEDOWN",
-          "selector": "div > div:nth-of-type(2) > label:nth-of-type(2)",
+          "selector": "div > div:nth-of-type(3) > label:nth-of-type(2)",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1664,11 +1745,11 @@
           ],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "Sy5MKIVG_",
+          "id": "ry7y34RQ_",
           "textContent": null,
           "textAsserted": false,
-          "x": 154,
-          "y": 339
+          "x": 209,
+          "y": 453
         },
         {
           "type": "INPUT",
@@ -1680,31 +1761,14 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "Skx9Mt8NGu",
+          "id": "H1VJnE07u",
           "value": true,
           "inputType": "checkbox",
           "isContentEditable": false
         },
         {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "input[type=checkbox].imgCheckbox:checked + label",
-          "selectorType": "CSS",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "rJ4-qU4zd",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
-        },
-        {
           "type": "MOUSEDOWN",
-          "selector": "div > div:nth-of-type(2) > label:nth-of-type(2)",
+          "selector": "div > div:nth-of-type(3) > label:nth-of-type(2)",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1714,12 +1778,11 @@
           ],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "H1oMKINfO",
+          "id": "r1Hy2NR7u",
           "textContent": null,
           "textAsserted": false,
-          "x": 154,
-          "y": 339,
-          "commented": false
+          "x": 209,
+          "y": 453
         },
         {
           "type": "INPUT",
@@ -1731,14 +1794,32 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "HJgjMYLEfd",
+          "id": "rJerkhERXO",
           "value": "valuable",
           "inputType": "checkbox",
           "isContentEditable": false
         },
         {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "input[type=checkbox].imgCheckbox + label",
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(3) > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "ryPJ2VCm_",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 315,
+          "y": 445
+        },
+        {
+          "type": "INPUT",
+          "selector": "[name=shopping]",
           "selectorType": "CSS",
           "nodeName": null,
           "description": null,
@@ -1746,12 +1827,43 @@
           "warnings": [],
           "suggestions": [],
           "continueOnFail": false,
-          "id": "SJMTc8VGd",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
+          "id": "B1lw13VAQ_",
+          "value": true,
+          "inputType": "checkbox",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(3) > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "By_13VRmd",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 315,
+          "y": 445
+        },
+        {
+          "type": "INPUT",
+          "selector": "[name=shopping]",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "BkluJnERXd",
+          "value": "valuable",
+          "inputType": "checkbox",
+          "isContentEditable": false
         }
       ],
       "id": "Hy-ZFU4Gd",
@@ -1759,6 +1871,213 @@
       "variables": [
         {
           "id": "SJlwftU4Md",
+          "name": "baseUrl",
+          "defaultValue": "http://localhost:8888",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "name": "US7:2",
+      "description": "",
+      "actions": [
+        {
+          "type": "URL_CHANGE_INDICATOR",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "B1xA7fwlVO",
+          "value": "/trekbook/addNew.php",
+          "index": null
+        },
+        {
+          "type": "FULL_PAGELOAD",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "HkC7fwg4d",
+          "value": "${baseUrl}/trekbook/addNew.php",
+          "width": 1049,
+          "height": 789,
+          "resize": false,
+          "complete": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "#editName",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "r1lEMDeEO",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 293,
+          "y": 292
+        },
+        {
+          "type": "INPUT",
+          "selector": "#editName",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "S1WZVMwgE_",
+          "value": "Gingers Cafe",
+          "inputType": "text",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "div > div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "r1w4zDeV_",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 504,
+          "y": 312
+        }
+      ],
+      "id": "HyJgzwgEd",
+      "type": "test",
+      "variables": [
+        {
+          "id": "rke9ZfDeVO",
+          "name": "baseUrl",
+          "defaultValue": "http://localhost:8888",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "name": "US7:1",
+      "description": "",
+      "actions": [
+        {
+          "type": "URL_CHANGE_INDICATOR",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "S1eIqXveNd",
+          "value": "/trekbook/addNew.php",
+          "index": null
+        },
+        {
+          "type": "FULL_PAGELOAD",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "HyU9XDgV_",
+          "value": "${baseUrl}/trekbook/addNew.php",
+          "width": 1049,
+          "height": 789,
+          "resize": false,
+          "complete": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "#photoImg",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "H1Kcmwg4O",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 203,
+          "y": 515
+        },
+        {
+          "type": "INPUT",
+          "selector": "#actual-btn",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "SJb2mDeNO",
+          "value": "C:\\fakepath\\correctSizeIMG.jpg",
+          "inputType": "file",
+          "isContentEditable": false
+        },
+        {
+          "type": "MOUSEDOWN",
+          "selector": "#output",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "BJ5SEvlN_",
+          "textContent": null,
+          "textAsserted": false,
+          "x": 264,
+          "y": 521
+        },
+        {
+          "type": "EL_NOT_VISIBLE_ASSERT",
+          "selector": "#errorMsg",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "S17DVPeVu",
+          "checkDisplay": true,
+          "checkVisibility": true,
+          "checkOpacity": true,
+          "checkDimensions": true,
+          "checkCenterPoint": true
+        }
+      ],
+      "id": "S1gKGPgVO",
+      "type": "test",
+      "variables": [
+        {
+          "id": "r1emYGvg4d",
           "name": "baseUrl",
           "defaultValue": "http://localhost:8888",
           "type": "STRING_VAR"
@@ -1904,6 +2223,27 @@
               "testId": "r1pxKUNfu",
               "leaf": true,
               "id": "SkagFLEM_",
+              "type": "test"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "module": "UT7",
+          "id": "B1eoZPxNO",
+          "children": [
+            {
+              "module": "Unnamed test",
+              "testId": "S1gKGPgVO",
+              "leaf": true,
+              "id": "rketMDeVu",
+              "type": "test"
+            },
+            {
+              "module": "Unnamed test",
+              "testId": "HyJgzwgEd",
+              "leaf": true,
+              "id": "SJklGDgV_",
               "type": "test"
             }
           ]
