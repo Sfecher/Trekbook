@@ -15,6 +15,7 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel ="stylesheet" href="stylesheetMain.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <title>Trekbook</title>
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
@@ -42,12 +43,19 @@ TRADEMARKS OR OTHER RIGHTS.
 
         <br>
         <!-- creating a form that the user will be able to insert information into. -->
-        <form method = "post" action="home.php" id="filter">
+        <form enctype="multipart/form-data" method = "post" action="home.php" id="filter">
             <div id="form">
-                <label class="label" for="location"><img src="img/raws/tb_location.png" alt="location pin" class="newImg">Location</label> <br>
+                <label class="label" for="location"><img src="img/raws/tb_location.png" alt="location pin" class="newImg">Location Address</label> <br>
                 <div class="inputs">
-                    <input class="input" type="text" name="location" id="location" placeholder="Location..."><br><br>
+                    <input class="input" type="text" name="location" id="location" placeholder="Address..."><br><br>
                 </div>
+
+                <!-- US7:2 -->
+                <label class="label" for="editName"><img src="img/raws/tb_edit.png" alt="image of a pencile" class="newImg">Location Name</label> <br>
+                <div class="inputs">
+                    <input class="input" type="text" name="editName" id="editName" placeholder="Name..."><br><br>
+                </div>
+
                 <!-- US6:1 -->
                 <div>
                     <label class="label" for="catigories"><img src="img/raws/tb_category.png" alt="star image" class="newImg">Catigories</label><br>
@@ -98,13 +106,44 @@ TRADEMARKS OR OTHER RIGHTS.
                     <input type="checkbox" name="winery" id="winery" />
                     <label class="tag" for="winery">WINERY</label>
                 </div>
+                <!-- US7:1 -->
+                <label class="label" for="image"><img src="img/raws/tb_photo.png" alt="image of photo" class="newImg">Image</label> <br>
+                <div class="inputs">
+                    <input id="actual-btn" type="file" onchange="loadFile(event)" name="file1" hidden/>
+                    <label id="test" for="actual-btn" > <img src="img/raws/tb_add_photo.png" alt="message bubble" id="photoImg"></label>
+                    <!-- the image tag is dispalying the image and the p tag is for if the image is the wrong size -->
+                    <img id="output" onload="imgSize();"/><p id="errorMsg" style='color:red; font-size:13px; font-family:Museo Sans; text-align: left;'></p><br>
+                </div>
     
-                <label class="label" for="note"><img src="img/raws/tb_comment.png" alt="message bubble" class="newImg">Note</label> <br>
+                <label class="label" for="note"><img src="img/raws/tb_comment.png" alt="message bubble" class="newImg" >Note</label> <br>
                 <div class="inputs">
                     <input class="input" type="text" name="note" id="note" placeholder="Add a note..."><br>
                 </div>
             </div>
-            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT" onclick="clickFunction()">
+            <input type ="submit" id = "submit" class="btn btn-primary btn-lg active btn-rounded submit" value= "LOG IT" onclick="clickFunction ()">
         </form>
+        <script>
+            // for US7:1
+            var loadFile = function(event) {
+                //this is displaying the file
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+
+            //This function gets the image size 
+            function imgSize(){
+                var image = document.getElementById('output');
+                //getting the images size
+                var currWidth = $(image).width();
+                var currHeight = $(image).height();
+                if(currWidth>=1500 && currWidth<=2500){ //if the image is the correct size it will dispaly it 
+                    document.getElementById("output").style.width = "200px";
+                }else{ //if the image is not between the measurments it will not dispaly the image and will display a error message
+                    document.getElementById("output").style.display = "none";
+                    document.getElementById("errorMsg").innerHTML = "Sorry Image too big or small";
+                }
+            };
+
+        </script>
     </body>
 </html>
