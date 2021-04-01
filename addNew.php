@@ -7,7 +7,12 @@ PURPOSE, NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE SUITA
 NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
 TRADEMARKS OR OTHER RIGHTS.
 -->
-<?php session_start();?>
+<?php 
+    session_start();
+    if(!isset($_SESSION["user"])){
+        header("Location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,7 +48,8 @@ TRADEMARKS OR OTHER RIGHTS.
 
         <br>
         <!-- creating a form that the user will be able to insert information into. -->
-        <form enctype="multipart/form-data" method = "post" action="home.php" id="filter">
+        <!-- for US8 I added value into all of the tags and categories in order to have a value to print -->
+        <form enctype="multipart/form-data" method = "post" action="upload.php" id="filter">
             <div id="form">
                 <label class="label" for="location"><img src="img/raws/tb_location.png" alt="location pin" class="newImg">Location Address</label> <br>
                 <div class="inputs">
@@ -53,21 +59,21 @@ TRADEMARKS OR OTHER RIGHTS.
                 <!-- US7:2 -->
                 <label class="label" for="editName"><img src="img/raws/tb_edit.png" alt="image of a pencile" class="newImg">Location Name</label> <br>
                 <div class="inputs">
-                    <input class="input" type="text" name="editName" id="editName" placeholder="Name..."><br><br>
+                    <input class="input" type="text" name="editName" id="editName"  placeholder="Name..."><br><br>
                 </div>
 
                 <!-- US6:1 -->
                 <div>
-                    <label class="label" for="catigories"><img src="img/raws/tb_category.png" alt="star image" class="newImg">Catigories</label><br>
-                    <input class="imgCheckbox" type='checkbox' name='foodAndDrink' value='valuable' id="foodAndDrink"/>
+                    <label class="label" for="catigories"><img src="img/raws/tb_category.png" alt="star image" class="newImg">Categories</label><br>
+                    <input class="imgCheckbox" type='checkbox' name='foodAndDrink' value='food and drink' id="foodAndDrink"/>
                     <label for="foodAndDrink"></label>
-                    <input class="shopping" type='checkbox' name='shopping' value='valuable' id="shopping"/>
+                    <input class="shopping" type='checkbox' name='shopping' value='shopping' id="shopping"/>
                     <label for="shopping"></label>
-                    <input class="landmark" type='checkbox' name='landmark' value='valuable' id="landmark"/>
+                    <input class="landmark" type='checkbox' name='landmark' value='landmark' id="landmark"/>
                     <label for="landmark"></label>
-                    <input class="recreation" type='checkbox' name='recreation' value='valuable' id="recreation"/>
+                    <input class="recreation" type='checkbox' name='recreation' value='recreation' id="recreation"/>
                     <label for="recreation"></label>
-                    <input class="lodging" type='checkbox' name='lodging' value='valuable' id="lodging"/>
+                    <input class="lodging" type='checkbox' name='lodging' value='lodging' id="lodging"/>
                     <label for="lodging"></label><br>
 
                     <label class="catlabel" id="foodDrink" for="foodAndDrink">FOOD & DRINK</label>
@@ -81,29 +87,40 @@ TRADEMARKS OR OTHER RIGHTS.
                 <!-- US6:2 -->
                 <label class="label" for="tags"><img src="img/raws/tb_list.png" alt="check box image" class="newImg">Tags</label> <br>
                 <div id="tagsHome">
-                    <input type="checkbox" name="hammock" id="hammock" />
+                    <input type="checkbox" name="hammock" value="hammock" id="hammock" />
                     <label class="tag" for="hammock">HAMMOCK</label>
-                    <input type="checkbox" name="adventure" id="adventure" />
+
+                    <input type="checkbox" name="adventure" value="adventure" id="adventure" />
                     <label class="tag" for="adventure">ADVENTURE</label>
-                    <input type="checkbox" name="airbnb" id="airbnb" />
+
+                    <input type="checkbox" name="airbnb" value="airbnb" id="airbnb" />
                     <label class="tag" for="airbnb">AIRBNB</label>
-                    <input type="checkbox" name="bicycles" id="bicycles" />
+
+                    <input type="checkbox" name="bicycles" value="bicycles" id="bicycles" />
                     <label class="tag" for="bicycles">BICYCLES</label>
-                    <input type="checkbox" name="brewery" id="brewery" />
+
+                    <input type="checkbox" name="brewery" value="brewery" id="brewery" />
                     <label class="tag" for="brewery">BREWERY</label>
-                    <input type="checkbox" name="campsite" id="campsite" />
+
+                    <input type="checkbox" name="campsite" value="campsite" id="campsite" />
                     <label class="tag" for="campsite">CAMPSITE</label><br>
-                    <input type="checkbox" name="coffee" id="coffee" />
+
+                    <input type="checkbox" name="coffee" value="coffee" id="coffee" />
                     <label class="tag" for="coffee">COFFEE</label>
-                    <input type="checkbox" name="gear" id="gear" />
+
+                    <input type="checkbox" name="gear" value="gear" id="gear" />
                     <label class="tag" for="gear">GEAR</label>
-                    <input type="checkbox" name="trailhead" id="trailhead" />
+
+                    <input type="checkbox" name="trailhead" value="trailhead" id="trailhead" />
                     <label class="tag" for="trailhead">TRAILHEAD</label>
-                    <input type="checkbox" name="hostel" id="hostel" />
+
+                    <input type="checkbox" name="hostel" value="hostel" id="hostel" />
                     <label class="tag" for="hostel">HOSTEL</label>
-                    <input type="checkbox" name="food" id="food" />
+
+                    <input type="checkbox" name="food" value="food" id="food" />
                     <label class="tag" for="food">FOOD</label>
-                    <input type="checkbox" name="winery" id="winery" />
+
+                    <input type="checkbox" name="winery" value="winery" id="winery" />
                     <label class="tag" for="winery">WINERY</label>
                 </div>
                 <!-- US7:1 -->
@@ -112,7 +129,7 @@ TRADEMARKS OR OTHER RIGHTS.
                     <input id="actual-btn" type="file" onchange="loadFile(event)" name="file1" hidden/>
                     <label id="test" for="actual-btn" > <img src="img/raws/tb_add_photo.png" alt="message bubble" id="photoImg"></label>
                     <!-- the image tag is dispalying the image and the p tag is for if the image is the wrong size -->
-                    <img id="output" onload="imgSize();"/><p id="errorMsg" style='color:red; font-size:13px; font-family:Museo Sans; text-align: left;'></p><br>
+                    <img id="output" onload="imgSize();"/><p id="errorMsg" style='color:red; font-size:16px; font-family:Museo Sans; text-align: left;'></p><br>
                 </div>
     
                 <label class="label" for="note"><img src="img/raws/tb_comment.png" alt="message bubble" class="newImg" >Note</label> <br>
@@ -140,7 +157,7 @@ TRADEMARKS OR OTHER RIGHTS.
                     document.getElementById("output").style.width = "200px";
                 }else{ //if the image is not between the measurments it will not dispaly the image and will display a error message
                     document.getElementById("output").style.display = "none";
-                    document.getElementById("errorMsg").innerHTML = "Sorry Image too big or small";
+                    document.getElementById("errorMsg").innerHTML = "Sorry the image you choose is too big or small.";
                 }
             };
 
