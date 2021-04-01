@@ -7,7 +7,24 @@ PURPOSE, NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE SUITA
 NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, 
 TRADEMARKS OR OTHER RIGHTS.
 -->
-<?php session_start();?>
+<?php 
+    session_start();
+    if(!isset($_SESSION["user"])){
+        header("Location: login.php");
+    }
+
+    include 'db-config.inc.php';
+
+    $mysqli = new mysqli(DBHOST, DBUSER, DBPASS, DBNAME);
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+
+    $sql = 'select * from Location where username="'.$_SESSION["user"].'"'; 
+    $stmt = $mysqli->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->get_result();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,24 +37,51 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
     </head>
     <body>
-        <div class="mobile-container">
+    <?php 
+        //US8
+        include ("nav.php");
+        //this is saying that if the result of the above sql query is greater than or equal to 1 row then we will do some work 
+        if($result->num_rows >= 1){
+                while($row= mysqli_fetch_assoc($result)){
+                    //here we are placing the inforamtion that we got from the sql into html tags to be displayed
+                    echo '<div class="wrapper">';
+                    echo '<p> Image of Location: <img src="'.$row["image"].'"style="width: 200px;"></p>';
+                    echo '<p id="name"> Location Name: '.$row["location_name"].'';
+                    echo '<p> Location Address: '.$row["address"].'';
+                    echo '<p>Catigories:</p>';
 
-            <!-- Top Navigation Menu -->
-            <div class="topnav">
-                <a href="home.php" class="active"><img src = "img/tb_trekbook-logo-vertical.png" alt = "Trekbook logo" width="60" height="35"></a>
-                <div id="myLinks"> <!--this is the set of links that will be used in the hamburger bar. -->
-                    <a href="account.php" class="navLinks">ACCOUNT</a>
-                    <a href="addNew.php" class="navLinks newLoc">ADD NEW LOCATION</a>
-                    <a href="#about" class="navLinks">FILTER</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerBar()">
-                    <!-- this is refering to a stylesheet that includes images/icons -->
-                    <i class="fa fa-bars"></i>
-                </a>
-                <!--this is a link to the users account. -->
-                <a href="account.php" class="active image"><img src = "img/accountImage.png" alt = "Trekbook logo" width="40" height="35"> </a>   
-            </div>
-                <!-- End smartphone / tablet look -->
-        </div>
+                    $id = $row["id"];
+
+                    //this is antoher sql statment for the catigories that are attached to the location
+                    $sqlCat = 'SELECT * FROM `location_cat` WHERE `location_id` = '.$id.''; 
+                    $stmtCat = $mysqli->prepare($sqlCat);
+                    $stmtCat->execute();
+                    $resultCat = $stmtCat->get_result();
+                    while($rowCat= mysqli_fetch_assoc($resultCat)){
+                        echo'<p id="categorie">'.$rowCat["categorie"].'</p>';
+                    }
+
+                    echo '<p>Tags:</p>';
+                    //this is a sql statment for the tags that are attached to the location
+                    $sqlTag = 'SELECT * FROM `location_tag` WHERE `location_id` = '.$id.''; 
+                    $stmtTag = $mysqli->prepare($sqlTag);
+                    $stmtTag->execute();
+                    $resultTag = $stmtTag->get_result();
+                    while($rowTag= mysqli_fetch_assoc($resultTag)){
+                        echo'<p id="tag">'.$rowTag["tag"].'</p>';
+                    }
+                    
+                    echo '<p id="note"> Note: '.$row["note"].'</p>';
+
+                    echo '<br>';
+                    echo '<hr>';
+                    echo '</div>';
+
+
+                }
+            }else{
+                echo '<p>Sorry there are no locations to display</p>';
+            }
+    ?>
     </body>
 </html>
