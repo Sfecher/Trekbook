@@ -205,18 +205,18 @@ input[type=checkbox].lodging:checked + label {
     font-weight: 900;
 }
 
-#hammock:checked ~ label[for="hammock"], 
-#adventure:checked ~ label[for="adventure"], 
-#airbnb:checked ~ label[for="airbnb"], 
-#bicycles:checked ~ label[for="bicycles"],
-#brewery:checked ~ label[for="brewery"],
-#campsite:checked ~ label[for="campsite"],
-#coffee:checked ~ label[for="coffee"],
-#food:checked ~ label[for="food"],
-#gear:checked ~ label[for="gear"],
-#hostel:checked ~ label[for="hostel"],
-#trailhead:checked ~ label[for="trailhead"],
-#winery:checked ~ label[for="winery"]{
+#hammock:checked ~ label[for="tag[]"], 
+#adventure:checked ~ label[for="tag[]"], 
+#airbnb:checked ~ label[for="tag[]"], 
+#bicycles:checked ~ label[for="tag[]"],
+#brewery:checked ~ label[for="tag[]"],
+#campsite:checked ~ label[for="tag[]"],
+#coffee:checked ~ label[for="tag[]"],
+#food:checked ~ label[for="tag[]"],
+#gear:checked ~ label[for="tag[]"],
+#hostel:checked ~ label[for="tag[]"],
+#trailhead:checked ~ label[for="tag[]"],
+#winery:checked ~ label[for="tag[]"]{
     background: #db637d;
     border: 5px solid #db637d;
     color: white;
