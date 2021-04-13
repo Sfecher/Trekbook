@@ -37,51 +37,25 @@ TRADEMARKS OR OTHER RIGHTS.
         <link rel="icon" href="img/tb_trekbook-mark-transparent.png" type="image/x-icon">
     </head>
     <body>
-    <?php 
-        //US8
-        include ("nav.php");
-        //this is saying that if the result of the above sql query is greater than or equal to 1 row then we will do some work 
-        if($result->num_rows >= 1){
+        <?php 
+            //US8
+            include ("nav.php");
+            echo '<div class="initWrapper">';
+            //this is saying that if the result of the above sql query is greater than or equal to 1 row then we will do some work 
+            if($result->num_rows >= 1){
                 while($row= mysqli_fetch_assoc($result)){
                     //here we are placing the inforamtion that we got from the sql into html tags to be displayed
                     echo '<div class="wrapper">';
-                    echo '<p> Image of Location: <img src="'.$row["image"].'"style="width: 200px;"></p>';
-                    echo '<p id="name"> Location Name: '.$row["location_name"].'';
-                    echo '<p> Location Address: '.$row["address"].'';
-                    echo '<p>Catigories:</p>';
-
+                    echo '<img id="locImage" src="'.$row["image"].'"style="width: 100%; height: 70%; border-radius: 30px 30px 0px 0px;">';
+                    echo '<p id="name"> '.$row["location_name"].'</p>';
+                    echo '<p id="address">'.$row["address"].'</p>';
                     $id = $row["id"];
-
-                    //this is antoher sql statment for the catigories that are attached to the location
-                    $sqlCat = 'SELECT * FROM `location_cat` WHERE `location_id` = '.$id.''; 
-                    $stmtCat = $mysqli->prepare($sqlCat);
-                    $stmtCat->execute();
-                    $resultCat = $stmtCat->get_result();
-                    while($rowCat= mysqli_fetch_assoc($resultCat)){
-                        echo'<p id="categorie">'.$rowCat["categorie"].'</p>';
-                    }
-
-                    echo '<p>Tags:</p>';
-                    //this is a sql statment for the tags that are attached to the location
-                    $sqlTag = 'SELECT * FROM `location_tag` WHERE `location_id` = '.$id.''; 
-                    $stmtTag = $mysqli->prepare($sqlTag);
-                    $stmtTag->execute();
-                    $resultTag = $stmtTag->get_result();
-                    while($rowTag= mysqli_fetch_assoc($resultTag)){
-                        echo'<p id="tag">'.$rowTag["tag"].'</p>';
-                    }
-                    
-                    echo '<p id="note"> Note: '.$row["note"].'</p>';
-
-                    echo '<br>';
-                    echo '<hr>';
                     echo '</div>';
-
-
                 }
             }else{
                 echo '<p>Sorry there are no locations to display</p>';
             }
-    ?>
+            echo'</div>';
+        ?>
     </body>
 </html>
