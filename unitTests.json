@@ -1046,34 +1046,6 @@
           "value": "${baseUrl}/trekbook/home.php",
           "warnings": [],
           "width": 1126
-        },
-        {
-          "continueOnFail": false,
-          "description": null,
-          "id": "S1gjkYaJO",
-          "nodeName": null,
-          "selector": ".fa",
-          "selectorType": "CSS",
-          "suggestions": [],
-          "textAsserted": false,
-          "textContent": null,
-          "timeout": null,
-          "type": "MOUSEDOWN",
-          "warnings": [],
-          "x": 1078,
-          "y": 39
-        },
-        {
-          "continueOnFail": false,
-          "description": null,
-          "id": "B1_leY6Ju",
-          "nodeName": null,
-          "selector": ".newLoc",
-          "selectorType": "CSS",
-          "suggestions": [],
-          "timeout": null,
-          "type": "EL_PRESENT_ASSERT",
-          "warnings": []
         }
       ],
       "description": "",
@@ -2423,57 +2395,6 @@
         },
         {
           "type": "EL_VISIBLE_ASSERT",
-          "selector": "note",
-          "selectorType": "ID",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "BJ2AD0zH_",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
-        },
-        {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "categorie",
-          "selectorType": "ID",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "BJDoOAMru",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
-        },
-        {
-          "type": "EL_VISIBLE_ASSERT",
-          "selector": "tag",
-          "selectorType": "ID",
-          "nodeName": null,
-          "description": null,
-          "timeout": null,
-          "warnings": [],
-          "suggestions": [],
-          "continueOnFail": false,
-          "id": "S1yT_0fru",
-          "checkDisplay": true,
-          "checkVisibility": true,
-          "checkOpacity": true,
-          "checkDimensions": true,
-          "checkCenterPoint": true
-        },
-        {
-          "type": "EL_VISIBLE_ASSERT",
           "selector": "name",
           "selectorType": "ID",
           "nodeName": null,
@@ -2495,6 +2416,87 @@
       "variables": [
         {
           "id": "rJlcnzRGHu",
+          "name": "baseUrl",
+          "defaultValue": "http://localhost:8888",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "name": "US9:1",
+      "description": "",
+      "actions": [
+        {
+          "type": "URL_CHANGE_INDICATOR",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "HybzkUyQLd",
+          "value": "/trekbook/home.php",
+          "index": null
+        },
+        {
+          "type": "FULL_PAGELOAD",
+          "selector": "",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "BkzJUJXIu",
+          "value": "${baseUrl}/trekbook/home.php",
+          "width": 877,
+          "height": 732,
+          "resize": false,
+          "complete": false
+        },
+        {
+          "type": "EL_VISIBLE_ASSERT",
+          "selector": "div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "B1PQ8JQL_",
+          "checkDisplay": true,
+          "checkVisibility": true,
+          "checkOpacity": true,
+          "checkDimensions": true,
+          "checkCenterPoint": true
+        },
+        {
+          "type": "EL_VISIBLE_ASSERT",
+          "selector": "div:nth-of-type(2)> div:nth-of-type(1)",
+          "selectorType": "CSS",
+          "nodeName": null,
+          "description": null,
+          "timeout": null,
+          "warnings": [],
+          "suggestions": [],
+          "continueOnFail": false,
+          "id": "Bk6X8yXU_",
+          "checkDisplay": true,
+          "checkVisibility": true,
+          "checkOpacity": true,
+          "checkDimensions": true,
+          "checkCenterPoint": true
+        }
+      ],
+      "id": "rJtTBymLO",
+      "type": "test",
+      "variables": [
+        {
+          "id": "S1xfJUkQ8d",
           "name": "baseUrl",
           "defaultValue": "http://localhost:8888",
           "type": "STRING_VAR"
@@ -2675,6 +2677,20 @@
               "testId": "Hkb5MAGHd",
               "leaf": true,
               "id": "SJZcMAfB_",
+              "type": "test"
+            }
+          ]
+        },
+        {
+          "collapsed": false,
+          "module": "UT9",
+          "id": "HJC9rJmU_",
+          "children": [
+            {
+              "module": "Unnamed test",
+              "testId": "rJtTBymLO",
+              "leaf": true,
+              "id": "B1tpry7UO",
               "type": "test"
             }
           ]
