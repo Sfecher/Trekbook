@@ -48,3 +48,5 @@ Step 19: Click in the “Note” textbox and add a quick note about your locatio
 Step 20: When you have filled everything out and you are satisfied with the information you selected 
 click the “Log It” button at the bottom of the screen.
 
+Setp 21: Once you have clicked the "Log It" button you should be re-directed to the home page where you will see your new location as well as all of your previous locations.
+
